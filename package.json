@@ -1,6 +1,7 @@
 {
   "name": "tld-names",
   "description": "A list of effective TLD names",
+  "license": "MIT",
   "main": "tld-names.json",
   "repository": {
     "type": "git",
@@ -8,9 +9,9 @@
   },
   "scripts": {
     "build": "node build.js",
-    "test": "npm run build && json -nf tld-names.json && node test.js",
     "prepublish": "npm t",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "test": "npm run build && json -nf tld-names.json && node test.js"
   },
   "config": {
     "ghooks": {
