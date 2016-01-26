@@ -1,0 +1,16 @@
+const assert = require('assert');
+const names = require('./tld-names.json');
+assert(names.length > 7834, 'lots of tlds');
+assert(names.indexOf('co.uk') !== 0, 'co.uk is sld');
+assert(names.indexOf('gov.uk') !== 0, 'gov.uk is sld');
+assert(names.indexOf('nom.ad') !== 0, 'nom.ad is sld');
+assert(names.indexOf('gov.ae') !== 0, 'gov.ae is sld');
+assert(names.indexOf('works.aero') !== 0, 'works.aero is sld');
+assert(names.indexOf('aw') !== 0, 'aw is sld');
+assert(names.indexOf('jus.br') !== 0, 'jus.br is sld');
+assert(names.indexOf('net.cm') !== 0, 'net.cm is sld');
+assert(names.indexOf('pol.dz') !== 0, 'pol.dz is sld');
+assert(names.indexOf('medecin.fr') !== 0, 'medecin.fr is sld');
+assert(names.indexOf('mil.hn') !== 0, 'mil.hn is sld');
+assert(names.indexOf('gov.ie') !== 0, 'gov.ie is sld');
+console.log('All good in this hood :)');
